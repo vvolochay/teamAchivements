@@ -141,16 +141,16 @@ fun generatePersonSVG(data: Data, person: Person, prefix: String) {
         }
 
         if (arrayList.size >= 9) {
-            for (i in 1 .. 9) {
+            for (i in 1..9) {
                 svgText = svgText.replace("{a$i}", achs[i - 1])
                     .replace("{achievement}", arrayList[i - 1].second)
             }
         } else {
-            for (i in 1 .. arrayList.size) {
+            for (i in 1..arrayList.size) {
                 svgText = svgText.replace("{a$i}", achs[i - 1])
                     .replace("{achievement}", arrayList[i - 1].second)
             }
-            for (i in arrayList.size + 1 .. 9) {
+            for (i in arrayList.size + 1..9) {
                 svgText = svgText.replace("{a$i}", achs[i - 1])
                     .replace("{achievement}", "")
             }
@@ -171,16 +171,18 @@ fun base64Logo(filename: String): String {
 }
 
 class TeamInfoGenerator {
-}
-
-
-fun main() {
-    val teamData = parseJsons()
-    for (data in teamData) {
-        generateMainSVG(data)
-        generatePersonSVG(data, data.coach, "coach")
-        for (i in 0 until data.contestants.size) {
-            generatePersonSVG(data, data.contestants[i], "contestant_$i")
+    fun run() {
+        val teamData = parseJsons()
+        for (data in teamData) {
+            generateMainSVG(data)
+            generatePersonSVG(data, data.coach, "coach")
+            for (i in 0 until data.contestants.size) {
+                generatePersonSVG(data, data.contestants[i], "contestant_$i")
+            }
         }
     }
+}
+
+fun main() {
+    TeamInfoGenerator().run()
 }

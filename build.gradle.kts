@@ -6,7 +6,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.vvolochay.TeamInfoGenerator")
+    mainClass.set("com.vvolochay.TeamInfoGeneratorKt")
 }
 
 group = "org.example"
