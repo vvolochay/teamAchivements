@@ -5,6 +5,7 @@
 .gradle/
 build/
 gradle/
+generated/
 
 # IntelliJ Files
 .idea/
