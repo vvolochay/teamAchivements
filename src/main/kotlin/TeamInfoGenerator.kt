@@ -129,23 +129,23 @@ class TeamInfoGenerator {
 
         svgText = svgText.replace("{rightRect}", rightRect).replace("{leftRect}", leftRect)
 
-        var a1 =
+        val a1 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19706\"><tspan x=\"216\" y=\"103.52\" id=\"tspan19704\">{achievement}</tspan></text>"
-        var a2 =
+        val a2 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19710\"><tspan x=\"216\" y=\"133.52\" id=\"tspan19708\">{achievement}</tspan></text>"
-        var a3 =
+        val a3 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19714\"><tspan x=\"216\" y=\"163.52\" id=\"tspan19712\">{achievement}</tspan></text>"
-        var a4 =
+        val a4 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19718\"><tspan x=\"523\" y=\"103.52\" id=\"tspan19716\">{achievement}</tspan></text>"
-        var a5 =
+        val a5 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19722\"><tspan x=\"523\" y=\"133.52\" id=\"tspan19720\">{achievement}</tspan></text>"
-        var a6 =
+        val a6 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19726\"><tspan x=\"523\" y=\"163.52\" id=\"tspan19724\">{achievement}</tspan></text>"
-        var a7 =
+        val a7 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19730\"><tspan x=\"800\" y=\"103.52\" id=\"tspan19728\">{achievement}</tspan></text>"
-        var a8 =
+        val a8 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19734\"><tspan x=\"800\" y=\"133.52\" id=\"tspan19732\">{achievement}</tspan></text>"
-        var a9 =
+        val a9 =
             "<text opacity=\"0.75\" fill=\"#ffffff\" xml:space=\"preserve\" style=\"white-space:pre\" font-family=\"Helvetica\" font-size=\"18px\" letter-spacing=\"0em\" id=\"text19738\"><tspan x=\"800\" y=\"163.52\" id=\"tspan19736\">{achievement}</tspan></text>"
 
         val achs = arrayListOf(a1, a2, a3, a4, a5, a6, a7, a8, a9)
