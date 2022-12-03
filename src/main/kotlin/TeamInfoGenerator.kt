@@ -181,8 +181,7 @@ class TeamInfoGenerator {
         }
 
     File(outputDir + "/" + data.id + "_" + prefix + ".svg").writeText(svgText, Charsets.UTF_8)
-}
-
+    }
 
     fun base64Logo(filename: String): String {
         val fileContent: ByteArray = FileUtils.readFileToByteArray(File("src/main/resources/logo/$filename"))
